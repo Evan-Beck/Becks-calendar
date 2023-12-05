@@ -4,6 +4,7 @@ $(function () {
     var timeBlockId = $(this).parent().attr("id");
     var userInput = $(this).siblings(".description").val();
     localStorage.setItem(timeBlockId, userInput);
+    console.log(localStorage);
   });
 
   // This function will generate time blocks for the day.
